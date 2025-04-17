@@ -53,7 +53,7 @@ app.use(session({
   passport.use(new GoogleStrategy({
     clientID: '106254330693-v677c04hn00fg75lf7abjtl10hv49f3d.apps.googleusercontent.com',
     clientSecret: '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',
-    callbackURL: 'https://collegeportal-oq2h.onrender.com//auth/google/callback'
+    callbackURL: 'https://collegeportal-oq2h.onrender.com/auth/google/callback'
   }, (accessToken, refreshToken, profile, done) => {
     return done(null, profile);
   }));
