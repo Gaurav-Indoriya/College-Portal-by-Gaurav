@@ -1,0 +1,49 @@
+<%- include('../header.ejs') %>
+
+    <br><br>
+    <h1 class="bg-info text-center mt-5">Messages</h1>
+    <% if(message.length> 0){ %>
+        <div class="alert alert-success">
+            <!--To Print-->
+            <%= message %>
+          </div>
+    <% } %>
+    <div class="container">
+        <table class="table table-bordered text-center">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Message</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% c.forEach((item)=>{ %>
+                    <tr>
+                        <td>
+                            <%= item.id %>
+                        </td>
+                        <td>
+                            <%= item.name %>
+                        </td>
+                        <td>
+                            <%= item.email %>
+                        </td>
+                        <td>
+                            <%= item.phone %>
+                        </td>
+                        <td>
+                            <%= item.message %>
+                        </td>
+                        <td><a href="/messageDelete/<%=item._id%>" class="btn btn-danger">Delete</a></td>
+                    <% }) %>
+                    </tr>  
+            </tbody>
+
+        </table>
+
+    </div>
+    <%- include('../footer.ejs') %>

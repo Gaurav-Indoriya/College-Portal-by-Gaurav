@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+
+<body class="login-bg">
+<section>
+    <div class="container h-100">
+        <div class="d-flex justify-content-center h-100">
+            <div class="user_card">
+                <div class="d-flex justify-content-center">
+                    <div class="brand_logo_container">
+                        <img src="./Images/logo.jpeg" class="brand_logo" alt="Logo">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center form_container">
+                    <form class="form" action="/verifyLogin" method="POST">
+                        
+                        <% if(message.length> 0){ %>
+                            <div class="alert alert-success">
+                                <!-- to be print -->
+                                <%=message %>
+                            </div>
+                        <%}%>
+                        <% if(message2.length> 0){ %>
+                            <div class="alert alert-danger">
+                                <!-- to be print -->
+                                <%=message2 %>
+                            </div>
+                        <%}%>
+                        <% if(message3.length> 0){ %>
+                            <div class="alert alert-danger">
+                                <!-- to be print -->
+                                <%=message3 %>
+                            </div>
+                        <%}%>
+                        <% if(message4.length> 0){ %>
+                            <div class="alert alert-danger">
+                                <!-- to be print -->
+                                <%=message4 %>
+                            </div>
+                        <%}%>
+                        <div class="input-group mb-3">
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" name="email" required class="form-control input_user" value=""
+                                placeholder="enter you email">
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="password" name="password" required class="form-control input_pass" value=""
+                                placeholder="enter you password">
+                        </div>
+                        <div class="form-group">
+                            <a href="">Forgot password?</a>
+                        </div>
+                        <div class="d-flex justify-content-center mt-3 login_container">
+                            <button type="submit" name="button" class="btn btn-info">Login</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="mt-4">
+                    <div class="d-flex justify-content-center links">
+                        Don't have an account? <a href="/register" class="ml-2">Register here</a>
+                    </div>
+                    <div class="d-flex justify-content-center links">
+                        <p>or signup with</p>
+                    </div>
+                    <center><a href="/googleAuth"><img src="./Images/google.png" style="height: 80px;" alt=""></a>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+
+</html>

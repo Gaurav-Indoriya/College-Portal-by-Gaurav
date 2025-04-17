@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+/* Login Page css start */
+.login-bg::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../Images/background.jpg') center/cover;
+    filter: blur(4px);
+    z-index: -1;
+}
+
+.user_card {
+    height: 550px;
+    width: 400px;
+    margin-top: 20%;
+    background: rgb(255, 255, 255);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    box-sizing: border-box;
+
+}
+
+.brand_logo_container {
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    top: -75px;
+    border-radius: 50%;
+    background: #00bbff;
+    padding: 10px;
+    text-align: center;
+}
+
+.brand_logo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.form_container {
+    margin-top: 100px;
+}
+
+.login-header {
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+    margin: auto;
+}
+
+.btn {
+    width: 60%;
+    color: white !important;
+}
+
+.login_btn:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+.login_container {
+    padding: 0 3rem;
+}
+
+.input-group-text {
+    background: #4400ff !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0.25rem 0 0 0.25rem !important;
+}
+.form{
+    width: 320px;
+}
+/* Login page css end */
+/* Register page css start*/
+
+
+/* ---------------------------------------------------------------
+                            General
+------------------------------------------------------------------ */
+
+body {
+    background: #f7f0bd !important;
+}
+
+::placeholder {
+    color: gray !important;
+    font-weight: lighter;
+}
+
+label {
+    padding-top: 10% !important;
+}
+
+/* ---------------------------------------------------------------
+                            #navbar
+------------------------------------------------------------------ */
+
+#navbar nav {
+    background: #0000009c !important;
+}
+
+.webViewPosition {
+    text-align: start !important;
+}
+
+/* ---------------------------------------------------------------
+                            #carousel
+------------------------------------------------------------------ */
+
+.carouselHeight {
+    height: 100vh;
+}
+
+/* ---------------------------------------------------------------
+                            #login
+------------------------------------------------------------------ */
+
+.bglogin {
+    background: #f7f0bd;
+}
+
+/* ---------------------------------------------------------------
+                            #footer
+------------------------------------------------------------------ */
+
+#footer {
+    background: #2a1a6f;
+}
+
+#social {
+    background: white;
+}
+
+#detail p {
+    text-align: justify;
+}
+
+/* ---------------------------------------------------------------
+                            About
+------------------------------------------------------------------ */
+
+.page-title-area {
+    position: relative;
+    z-index: 1;
+}
+
+.paddingValue label {
+    padding: 0 !important;
+}
+
+/* ---------------------------------------------------------------
+                            Media Query
+------------------------------------------------------------------ */
+
+@media (max-width:992px) {
+    #navbarsExample11 {
+        justify-content: center !important;
+    }
+
+    .mobileViewButton {
+        background: white !important;
+        margin-bottom: 2rem;
+    }
+}

@@ -1,0 +1,60 @@
+<%- include('../header.ejs') %>
+
+    <br><br>
+    <h1 class="bg-info text-center mt-5">Course View</h1>
+    <div class="container">
+        <table class="table table-bordered text-center">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Gender</th>
+                    <th>Course</th>
+                    <th>Address</th>
+                    <th>DOB</th>
+                    <th>Status</th>
+                    <th>Comment</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                    <tr>
+                        <td>
+                            <%= c._id %>
+                        </td>
+                        <td>
+                            <%= c.name %>
+                        </td>
+                        <td>
+                            <%= c.email %>
+                        </td>
+                        <td>
+                            <%= c.phone %>
+                        </td>
+                        <td>
+                            <%= c.gender %>
+                        </td>
+                        <td>
+                            <%= c.course %>
+                        </td>
+                        <td>
+                            <%= c.address %>
+                        </td>
+                        <td>
+                            <%= c.dob %>
+                        </td>
+                        <td>
+                            <%= c.status %>
+                        </td>
+                        <td>
+                            <%= c.comment %>
+                        </td>
+                    </tr>
+            </tbody>
+
+        </table>
+
+    </div>
+    <%- include('../footer.ejs') %>
