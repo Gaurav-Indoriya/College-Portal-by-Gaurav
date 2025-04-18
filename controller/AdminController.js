@@ -101,10 +101,10 @@ class AdminController {
         </head>
         <body>
             <div class="email-container">
-                <div class="email-header">Message Registered Successfully</div>
+                <div class="email-header">Your Course has been Approved!</div>
                 <div class="email-body">
                     <p>Dear <b>${name}</b>,</p>
-                   <p>We are pleased to inform you that your course has been approved! Congratulations on your hard work and dedication.<br>
+                   <p>We are pleased to inform you that your course has been approved! Congratulations on your hard work and dedication.<br><br>
                    ${comment}<p>
                     <p>We appreciate your effort and encourage you to reach out if you have any questions or need clarification.</p>
                 </div>
@@ -177,11 +177,11 @@ class AdminController {
         </head>
         <body>
             <div class="email-container">
-                <div class="email-header">Message Registered Successfully</div>
+                <div class="email-header">Your Course has been Rejected!</div>
                 <div class="email-body">
                     <p>Dear <b>${name}</b>,</p>
                      
-                    <p>Unfortunately, your course has been rejected. Please review the feedback below for further details:<br>
+                    <p>Unfortunately, your course has been rejected. Please review the feedback below for further details:<br><br>
                    ${comment}</p>
                     <p>We appreciate your effort and encourage you to reach out if you have any questions or need clarification.</p>
                 </div>
