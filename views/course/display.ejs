@@ -53,7 +53,11 @@
                         </td>
                         <td>
                             <a href="/courseView/<%= item._id %>" class="btn btn-info">View</a>
+                            <% if (u.role == 'admin') { %>
                             <a href="/courseEdit/<%= item._id %>" class="btn btn-success">Edit</a>
+                            <% } else { %>
+                            <a href="/courseEdit/<%= item._id %>" class="btn btn-success" style="display: none;">Edit</a>
+                            <% } %>
                             <a href="/courseDelete/<%= item._id %>"class="btn btn-danger">Delete</a>
                         </td>
                     </tr>
