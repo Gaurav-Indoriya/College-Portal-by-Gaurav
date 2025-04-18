@@ -50,7 +50,7 @@ class AdminController {
       
         let transporter = await nodemailer.createTransport({
             host: "smtp.mail.yahoo.com",
-            port: 587,
+            port: 465,
             secure: true, // use SSL
             auth: {
                 user: "gaurav.indoriya@yahoo.com",
@@ -126,7 +126,7 @@ class AdminController {
       
         let transporter = await nodemailer.createTransport({
             host: "smtp.mail.yahoo.com",
-            port: 587,
+            port: 465,
             secure: true, // use SSL
             auth: {
                 user: "gaurav.indoriya@yahoo.com",
