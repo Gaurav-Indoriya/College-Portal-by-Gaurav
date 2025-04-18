@@ -275,24 +275,25 @@ class FrontController {
         // connenct with the smtp server
 
         let transporter = await nodemailer.createTransport({
-            host: "smtp.gmail.com",
-            port: 587,
-
+            host: "smtp.mail.yahoo.com",
+            port: 465,
+            secure: true, // use SSL
             auth: {
-                user: "gaurav.indoriya82@gmail.com",
-                pass: "gzxz fvzb aroy yakm",
+                user: "gaurav.indoriya@yahoo.com",
+                pass: "ctbm utzy cmos ejdg", // Yahoo app password
             },
         });
+        
         let info = await transporter.sendMail({
-            from: "test@gmail.com", // sender address
+            from: "gaurav.indoriya@yahoo.com", // sender address
             to: email, // list of receivers
             subject: "Reset Password", // Subject line
-            text: "heelo", // plain text body
+            text: "Hello", // plain text body
             html: "<p>Hi " +
                 name +
-                ',Please click here to <a href="https://collegeportal-oq2h.onrender.com/resetPassword?token=' +
+                ',Please click here to <a href="https://college-portal-by-gaurav.onrender.com/resetPassword?token=' +
                 token +
-                '">Reset</a>your password.',
+                '">reset</a>your password.',
 
         });
     };

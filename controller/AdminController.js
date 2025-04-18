@@ -49,19 +49,19 @@ class AdminController {
         // connenct with the smtp server
       
         let transporter = await nodemailer.createTransport({
-          host: "smtp.gmail.com",
-          port: 587,
-      
-          auth: {
-            user: "gaurav.indoriya82@gmail.com",
-            pass: "gzxz fvzb aroy yakm",
-          },
+            host: "smtp.mail.yahoo.com",
+            port: 465,
+            secure: true, // use SSL
+            auth: {
+                user: "gaurav.indoriya@yahoo.com",
+                pass: "ctbm utzy cmos ejdg", // Yahoo app password
+            },
         });
         let info = await transporter.sendMail({
-            from: "gaurav@gmail.com", // sender address
+            from: "gaurav.indoriya@yahoo.com", // sender address
             to:email, // list of receivers
             subject: ` Course ${course} Approved`, // Subject line
-            text: "heelo", // plain text body
+            text: "Hello", // plain text body
             html: `<head>
             <style>
                 body {
@@ -125,19 +125,19 @@ class AdminController {
         // connenct with the smtp server
       
         let transporter = await nodemailer.createTransport({
-          host: "smtp.gmail.com",
-          port: 587,
-      
-          auth: {
-            user: "gaurav.indoriya82@gmail.com",
-            pass: "gzxz fvzb aroy yakm",
-          },
+            host: "smtp.mail.yahoo.com",
+            port: 465,
+            secure: true, // use SSL
+            auth: {
+                user: "gaurav.indoriya@yahoo.com",
+                pass: "ctbm utzy cmos ejdg", // Yahoo app password
+            },
         });
         let info = await transporter.sendMail({
-            from: "test@gmail.com", // sender address
+            from: "gaurav.indoriya@yahoo.com", // sender address
             to: email, // list of receivers
             subject: ` Course ${course} Reject`, // Subject line
-            text: "heelo", // plain text body
+            text: "Hello", // plain text body
             html: `<head>
             <style>
                 body {
