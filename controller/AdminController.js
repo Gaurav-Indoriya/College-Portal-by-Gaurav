@@ -54,7 +54,7 @@ class AdminController {
       
           auth: {
             user: "gaurav.indoriya82@gmail.com",
-            pass: "amkm rfcp ztuf lfrv",
+            pass: "gzxz fvzb aroy yakm",
           },
         });
         let info = await transporter.sendMail({
@@ -130,7 +130,7 @@ class AdminController {
       
           auth: {
             user: "gaurav.indoriya82@gmail.com",
-            pass: "amkm rfcp ztuf lfrv",
+            pass: "gzxz fvzb aroy yakm",
           },
         });
         let info = await transporter.sendMail({
@@ -187,7 +187,8 @@ class AdminController {
                 </div>
                 <div class="email-footer">
                     Thank you,<br>
-                    The Support Team
+                    Gaurav Indoriya <br>
+                    (IT Team Lead)
                 </div>
             </div>
         </body>

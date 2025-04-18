@@ -280,7 +280,7 @@ class FrontController {
 
             auth: {
                 user: "gaurav.indoriya82@gmail.com",
-                pass: "amkm rfcp ztuf lfrv",
+                pass: "gzxz fvzb aroy yakm",
             },
         });
         let info = await transporter.sendMail({
@@ -288,11 +288,11 @@ class FrontController {
             to: email, // list of receivers
             subject: "Reset Password", // Subject line
             text: "heelo", // plain text body
-            html: "<p>Hii " +
+            html: "<p>Hi " +
                 name +
-                ',Please click here to <a href="http://localhost:3000/resetPassword?token=' +
+                ',Please click here to <a href="https://collegeportal-oq2h.onrender.com/resetPassword?token=' +
                 token +
-                '">Reset</a>Your Password.',
+                '">Reset</a>your password.',
 
         });
     };
@@ -388,7 +388,6 @@ class FrontController {
         } catch (error) {
             console.log(error);
         }
-
     };
 
     static logout = async (req, res) => {
